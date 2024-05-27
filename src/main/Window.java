@@ -8,10 +8,10 @@ public class Window extends JFrame {
     Cookie cookie;
     Text text;
     Upgrade upgrade;
+    int width = 600;
+    int height = 600;
 
     Window() {
-        int width = 600;
-        int height = 600;
 
         text = new Text();
         cookie = new Cookie(text);

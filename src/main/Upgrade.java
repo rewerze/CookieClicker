@@ -18,13 +18,14 @@ public class Upgrade {
         this.text = text;
 
         levelUpUpgrade = new JButton();
-        levelUpUpgrade.setBounds(120, 22, 180, 25);
-        levelUpUpgrade.setBackground(new Color(5, 5, 15));
+        levelUpUpgrade.setBounds(270, 22, 300, 25);
         levelUpUpgrade.setText(levelUpTXT + levelUpCost);
         levelUpUpgrade.setForeground(Color.WHITE);
         levelUpUpgrade.setFont(new Font("Monocraft", Font.PLAIN, 20));
-        levelUpUpgrade.setHorizontalAlignment(SwingConstants.CENTER);
-        levelUpUpgrade.setFocusable(false);
+        levelUpUpgrade.setHorizontalAlignment(SwingConstants.RIGHT);
+        levelUpUpgrade.setBorderPainted(false);
+        levelUpUpgrade.setContentAreaFilled(false);
+        levelUpUpgrade.setFocusPainted(false);
 
         levelUpUpgrade.addActionListener(new ActionListener() {
             @Override

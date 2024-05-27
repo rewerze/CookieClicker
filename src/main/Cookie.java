@@ -5,6 +5,7 @@ import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import java.net.URL;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 
@@ -19,7 +20,8 @@ public class Cookie {
         this.text = text;
         int WH = 300;
 
-        cookie = new ImageIcon("res/cookie.png");
+        URL imgURL = Main.class.getClassLoader().getResource("res/cookie.png");
+        cookie = new ImageIcon(imgURL);
 
         // transorm the icon into and image to enlarge it then it tranforms it back
         Image image = cookie.getImage();
